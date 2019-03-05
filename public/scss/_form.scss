@@ -14,17 +14,37 @@ input[type=text] {
   border: none;
   background-color: transparent;
   width: 100%;
-  
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 400;
+  padding: 19px 0px 19px 16px;
+  &:focus {
+    outline: none;
+    background-color: transparent;
+  }
 }
-
-input[type=text]:focus {
-  outline: none;
-  background-color: transparent;
-}
-
 input[type=submit] {
+  box-sizing: border-box;
+  font-family: 'Fahkwang', sans-serif;
   width: 101px;
   height: 41px;
   border-radius: 15px;
   background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px 17px 13px 16px;
+  border: none;
+  margin: 5px 5px 5px 0;
+}
+input[type=text]:-webkit-autofill {
+  background-color: transparent !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: "color 9999s ease-out, background-color 9999s ease-out";
+    transition-delay: 9999s;
 }

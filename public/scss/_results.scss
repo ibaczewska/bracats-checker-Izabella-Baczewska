@@ -1,17 +1,15 @@
 #result {
   width: 304px;
   height: 304px;
-  
+  margin-top: 35px;
   &.correct {
     background: url(../img/correct.jpg) center center;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   &.incorrect {
-    background-image: url(../img/incorrect.jpg);
+    background-image: url(../img/incorrect.jpg) center center;
+    background-size: contain;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
