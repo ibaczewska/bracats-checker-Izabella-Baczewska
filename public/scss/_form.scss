@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+  padding:2px;
+  width: 401px;
+  height: 51px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+input[type=text] {
+  flex-grow: 2;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  
+}
+
+input[type=text]:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+input[type=submit] {
+  width: 101px;
+  height: 41px;
+  border-radius: 15px;
+  background-color: #000000;
+}
