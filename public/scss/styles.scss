@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Fahkwang');
+@import 'wrapper';
+@import 'results';
+@import 'form';
+
+body {
+  font-family: 'Fahkwang', sans-serif;
+}
+h1 {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
+
+
