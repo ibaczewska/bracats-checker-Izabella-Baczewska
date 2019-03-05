@@ -28,6 +28,9 @@ test('returns false for "catcatcattactac"', () => {
     expect(check('catcatcattactac')).toBe(false);
 });
 
+test('returns false for "cattacaaa"', () => {
+    expect(check('cattacaaa')).toBe(false);
+});
 test('returns false for "empty string"', () => {
     expect(check('')).toBe(false);
 });
