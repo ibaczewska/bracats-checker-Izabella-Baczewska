@@ -1,15 +1,15 @@
-form {
+.bracats__form {
   display: flex;
   flex-direction: row;
   border: 1px solid grey;
-  padding:2px;
+  padding: 2px;
   width: 401px;
   height: 51px;
   border-radius: 15px;
   background-color: #ffffff;
 }
 
-input[type=text] {
+.bracats__input--text {
   flex-grow: 2;
   border: none;
   background-color: transparent;
@@ -19,12 +19,19 @@ input[type=text] {
   font-family: 'Fahkwang', sans-serif;
   font-weight: 400;
   padding: 19px 0px 19px 16px;
+  transform: scale(1);
+  box-shadow: none;
   &:focus {
-    outline: none;
-    background-color: transparent;
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.25s ease-in-out;
+    border-right: none;
+    border-radius: 15px;
   }
 }
-input[type=submit] {
+
+.bracats__input--submit {
   box-sizing: border-box;
   font-family: 'Fahkwang', sans-serif;
   width: 101px;
@@ -34,17 +41,28 @@ input[type=submit] {
   color: #ffffff;
   font-size: 20px;
   font-weight: 400;
-  padding: 8px 17px 13px 16px;
-  border: none;
+  padding: 6px 17px 13px 16px;
+  border: 1px solid #000000;
   margin: 5px 5px 5px 0;
+  &:hover,
+  &:focus {
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    outline: 0;
+  }
 }
-input[type=text]:-webkit-autofill {
+
+input:-webkit-autofill {
   background-color: transparent !important;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: "color 9999s ease-out, background-color 9999s ease-out";
-    transition-delay: 9999s;
+  transition: 'color 9999s ease-out, background-color 9999s ease-out';
+  transition-delay: 9999s;
 }
