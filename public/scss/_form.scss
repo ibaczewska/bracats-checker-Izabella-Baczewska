@@ -6,7 +6,7 @@
   width: 401px;
   height: 51px;
   border-radius: 15px;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .bracats__input--text {
@@ -14,10 +14,10 @@
   border: none;
   background-color: transparent;
   width: 100%;
-  color: #000000;
+  color: $black;
   font-size: 16px;
-  font-family: 'Fahkwang', sans-serif;
-  font-weight: 400;
+  font-family: $main-font-family;
+  font-weight: $main-font-weigh;
   padding: 19px 0px 19px 16px;
   transform: scale(1);
   box-shadow: none;
@@ -33,22 +33,22 @@
 
 .bracats__input--submit {
   box-sizing: border-box;
-  font-family: 'Fahkwang', sans-serif;
+  font-family: $main-font-family;
   width: 101px;
   height: 41px;
   border-radius: 15px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: $black;
+  color: $white;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: $main-font-weigh;
   padding: 6px 17px 13px 16px;
-  border: 1px solid #000000;
+  border: 1px solid $black;
   margin: 5px 5px 5px 0;
   &:hover,
   &:focus {
-    border: 1px solid #000000;
-    color: #000000;
-    background-color: #ffffff;
+    border: 1px solid $black;
+    color: $black;
+    background-color: $white;
     cursor: pointer;
     transition: all 0.25s ease-in-out;
     outline: 0;

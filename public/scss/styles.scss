@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Fahkwang');
+@import 'variables';
 @import 'wrapper';
 @import 'results';
 @import 'form';
 body {
-  font-family: 'Fahkwang', sans-serif;
+  font-family: $main-font-family;
 }
 
 h1 {
-  color: #000000;
+  color: $black;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: $main-font-weigh;
 }
 
 .container {
