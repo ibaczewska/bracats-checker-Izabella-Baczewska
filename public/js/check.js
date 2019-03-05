@@ -17,6 +17,8 @@ const check = (inputValue) => {
           let openBracatExists = openingBracats.includes(bracat);
           let closeBracatIdExists = closingBracats.includes(bracat);
   
+          if(!openBracatExists && !closeBracatIdExists) return false;
+
           if (openBracatExists) {
               stack.push(bracat);
           } else if (closeBracatIdExists) {            
