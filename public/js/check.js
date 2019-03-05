@@ -1,14 +1,15 @@
-const containsOpenCats = (inputValue, openingBracats) => {
+const containsAnyOpenBracat = (inputValue, openingBracats) => {
   for(let i = 0; i < openingBracats.length; i++){
     if(inputValue.includes(openingBracats[i])) return true
   }
   return false
 }
 
+const openingBracats = ['cat', 'CAT', 'cAt'];
+const closingBracats = ['tac', 'TAC', 'tAc']; 
+
 const check = (inputValue) => {
-  const openingBracats = ['cat', 'CAT', 'cAt'];
-  const closingBracats = ['tac', 'TAC', 'tAc']; 
-    if(containsOpenCats(inputValue, openingBracats)) {
+    if(containsAnyOpenBracat(inputValue, openingBracats)) {
       let lastBracat;
       const stack = [];
       
@@ -16,8 +17,9 @@ const check = (inputValue) => {
           let bracat = inputValue.substring(i, i+3);
           let openBracatExists = openingBracats.includes(bracat);
           let closeBracatIdExists = closingBracats.includes(bracat);
-  
-          if(!openBracatExists && !closeBracatIdExists) return false;
+          let isInvalidBracat = !openBracatExists && !closeBracatIdExists
+
+          if(isInvalidBracat) return false;
 
           if (openBracatExists) {
               stack.push(bracat);
@@ -32,7 +34,7 @@ const check = (inputValue) => {
       }
   
       if (stack.length !== 0) return false;
-      return true;     
+      return true;
     }
     return false
 }

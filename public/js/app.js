@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const result = check(inputElem.value);
 
     resultElem.classList.remove(`${result ? 'in' : ''}correct`);
-    wrapperElem.classList.remove(`${result ? 'in' : ''}correct`);
     resultElem.classList.add(`${!result ? 'in' : ''}correct`);
+    wrapperElem.classList.remove(`${result ? 'in' : ''}correct`);
     wrapperElem.classList.add(`${!result ? 'in' : ''}correct`);
   });
 
